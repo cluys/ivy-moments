@@ -1,0 +1,28 @@
+{
+  "name": "cluys/ivy-moments",
+  "description": "Moments plugin for ivy CMS",
+  "type": "ivy-plugin",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Joep Dooper"
+    }
+  ],
+  "require": {
+    "php": ">=8.5.6"
+  },
+  "extra": {
+    "ivy": {
+      "name": "Moments",
+      "type": "module",
+      "interface": "Cluys\\Plugin\\Moments\\MomentsPlugin"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Cluys\\Plugin\\Moments\\": "src/classes/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
